@@ -46,3 +46,16 @@ Let’s revisit the two examples we presented in the Vulnerability Analysis task
 In the second example, we considered the vulnerability of an unsecured database used to store data received from a phishing page. From a risk assessment perspective, we considered it as high risk due to malicious third parties potentially looking for random easy targets. The countermeasure, in this case, would be to ensure that the database is adequately secured so that the data cannot be accessed except by authorized personnel.
 
 https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/520502m.pdf
+
+# Welcome to Intro to C2 
+Command and Control (C2) Frameworks are an essential part of both Red Teamers and Advanced Adversaries playbooks. They make it both easy to manage compromised devices during an engagement and often help aid in lateral movement.
+
+# Objectives
+In this section, we will learn about Command and Control Frameworks in-depth to gain a better understanding of the following topics:
+
+1. How a Command and Control Framework operates
+2. The various components that you may use.
+3. How to set up a basic Command and Control Framework
+4. Use Armitage or Metasploit to gain familiarity with a Command and Control Framework
+5. How to administer a Command and Control Framework
+6. OPSEC Considerations while administering a Command and Control Framework
