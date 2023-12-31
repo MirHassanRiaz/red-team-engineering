@@ -1,0 +1,18 @@
+# Welcome to Intro to C2 
+Command and Control (C2) Frameworks are an essential part of both Red Teamers and Advanced Adversaries playbooks. They make it both easy to manage compromised devices during an engagement and often help aid in lateral movement.
+
+# Objectives
+In this section, we will learn about Command and Control Frameworks in-depth to gain a better understanding of the following topics:
+
+How a Command and Control Framework operates
+The various components that you may use.
+How to set up a basic Command and Control Framework
+Use Armitage or Metasploit to gain familiarity with a Command and Control Framework
+How to administer a Command and Control Framework
+OPSEC Considerations while administering a Command and Control Framework
+And much more!
+Room Prerequisites
+
+General experience with the Metasploit Framework, for more information, see the Metasploit Module.
+General familiarity with Red Teaming; for more information, see the Red Team Fundamentals room.
+General familiarity with exploiting vulnerable virtual machines.
