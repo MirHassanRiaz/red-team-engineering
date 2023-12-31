@@ -1,4 +1,4 @@
-# red-team-engineering
+# Red Team Engineering
 
 # NMAP Scanning Obfuscation
 If an HTTP user agent isn't set at the time of running the given Nmap script, the logs on the target system could log a user agent containing Nmap Scripting Engine. This can be mitigated using the option --script-args http.useragent="CUSTOM_AGENT"
