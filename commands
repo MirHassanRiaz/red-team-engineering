@@ -1,0 +1,18 @@
+#Scan all ports of an organization with stealth
+
+nmap -sS -sU -p 1-65535 --scan-delay 1s --max-retries 1 --randomize-hosts --randomize -T3 -n -Pn -v <target_IP>
+  
+#Let's break down the options used in this command:
+
+-sS: Performs a SYN scan, which is a stealthy scan technique.
+-sU: Performs a UDP scan, also using stealthy techniques where possible.
+-p 1-65535: Specifies the range of ports to scan.
+--scan-delay 1s: Sets a delay of 1 second between scan probes to reduce the chance of detection.
+--max-retries 1: Sets the maximum number of retries for failed probes to 1, minimizing the impact on the firewall.
+--randomize-hosts: Randomizes the order in which hosts are scanned, adding another layer of stealth.
+--randomize: Randomizes the order of ports scanned, further obfuscating the scanning pattern.
+-T3: Sets the timing template to "Aggressive," balancing speed and stealth.
+-n: Treats all hosts as online, skipping host discovery.
+-Pn: Treats all hosts as online, skipping host discovery and ping probes.
+-v: Increases verbosity to provide more detailed output.
+<target_IP>: Specifies the target IP address or hostname to scan.
