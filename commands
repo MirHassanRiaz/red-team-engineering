@@ -1,4 +1,4 @@
-# Scan all ports of an organization with stealth
+# Scan all ports of an organization with stealth tcp/udp both from port (1-65535)
 
 nmap -sS -sU -p 1-65535 --scan-delay 1s --max-retries 1 --randomize-hosts --randomize -T3 -n -Pn -v <target_IP>
   
