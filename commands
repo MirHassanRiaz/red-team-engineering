@@ -1,8 +1,8 @@
-#Scan all ports of an organization with stealth
+# Scan all ports of an organization with stealth
 
 nmap -sS -sU -p 1-65535 --scan-delay 1s --max-retries 1 --randomize-hosts --randomize -T3 -n -Pn -v <target_IP>
   
-#Let's break down the options used in this command:
+# Let's break down the options used in this command:
 
 -sS: Performs a SYN scan, which is a stealthy scan technique.
 -sU: Performs a UDP scan, also using stealthy techniques where possible.
