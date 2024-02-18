@@ -25,3 +25,7 @@ $assetfinder att.com –subs-only | massdns -r lists/resolvers.txt -o S -w resol
 
 $cat domainlookup.txt | massdns -r /root/MassDNS/massdns/lists/resolvers.txt -o S -w resolved.txt
 $cat resolved.txt | sed -n 's/^\([^ ]*\)\..*$/\1/p'
+
+# Find subdomin of a specific organization
+
+./findomain -t abc.com > abc_domainlist.txt
