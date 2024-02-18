@@ -20,4 +20,8 @@ $nmap -sS -sU -p 1-65535 --scan-delay 1s --max-retries 1 --randomize-hosts --ran
 # Identify active DNS hosts of an organization and parse its output
 
 $assetfinder att.com –subs-only | massdns -r lists/resolvers.txt -o S -w resolved.txt
+
+# Identify active DNS based on the domains provided from the domain_list.txt file
+
+$cat domainlookup.txt | massdns -r /root/MassDNS/massdns/lists/resolvers.txt -o S -w resolved.txt
 $cat resolved.txt | sed -n 's/^\([^ ]*\)\..*$/\1/p'
