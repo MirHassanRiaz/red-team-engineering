@@ -1,6 +1,6 @@
 # Scan all ports of an organization with stealth tcp/udp both from port (1-65535)
 
-nmap -sS -sU -p 1-65535 --scan-delay 1s --max-retries 1 --randomize-hosts --randomize -T3 -n -Pn -v <target_IP>
+$nmap -sS -sU -p 1-65535 --scan-delay 1s --max-retries 1 --randomize-hosts --randomize -T3 -n -Pn -v <target_IP>
   
 # Let's break down the options used in this command:
 
@@ -16,3 +16,8 @@ nmap -sS -sU -p 1-65535 --scan-delay 1s --max-retries 1 --randomize-hosts --rand
 -Pn: Treats all hosts as online, skipping host discovery and ping probes.
 -v: Increases verbosity to provide more detailed output.
 <target_IP>: Specifies the target IP address or hostname to scan.
+
+# Identify active DNS hosts of an organization and parse its output
+
+$assetfinder att.com –subs-only | massdns -r lists/resolvers.txt -o S -w resolved.txt
+$cat resolved.txt | sed -n 's/^\([^ ]*\)\..*$/\1/p'
