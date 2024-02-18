@@ -28,4 +28,13 @@ $cat resolved.txt | sed -n 's/^\([^ ]*\)\..*$/\1/p'
 
 # Find subdomin of a specific organization
 
-./findomain -t abc.com > abc_domainlist.txt
+$./findomain -t abc.com > abc_domainlist.txt
+
+# Setting environment variables in kali linux
+
+$ export CENSYS_API_ID=...
+$ export CENSYS_API_SECRET=...
+
+# Running Censys Subdomain Finder
+
+$python censys-subdomain-finder.py github.com
